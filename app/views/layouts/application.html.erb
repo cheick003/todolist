@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SigAdmV1</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="assets/styles/style.min.css">
+    <!-- Material Design Icon -->
+    <link rel="stylesheet" href="assets/fonts/material-design/css/materialdesignicons.css">
+  </head>
+
+  <body>
+    <%= yield %>
+
+    <script src="assets/script/html5shiv.min.js"></script>
+    <script src="assets/script/respond.min.js"></script>
+    <script src="assets/scripts/jquery.min.js"></script>
+    <script src="assets/plugin/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugin/nprogress/nprogress.js"></script>
+    <script src="assets/scripts/main.min.js"></script>
+  </body>
+</html>
